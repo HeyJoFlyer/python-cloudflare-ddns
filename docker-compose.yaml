@@ -1,0 +1,10 @@
+version: "3.7"
+#image-tag: cloudflare-ddns
+
+services:
+  app:
+    container_name: dyndns
+    image: cloudflare-ddns:latest
+    volumes:
+      - ${PWD}/dyndns:/usr/dyndns
+    restart: unless-stopped
