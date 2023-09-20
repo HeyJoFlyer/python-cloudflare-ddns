@@ -4,6 +4,8 @@ A simple (dockerized) python script that updates the ip address of cloudflare DN
 
 ## Install
 Before building the docker image or using the script otherwhise you need to write your cloudflare token to `token.txt` and edit the zone id and record id in `dyndns.py`. If you want to update multiple records you can `mv -f "dyndns multiple records.py" "dyndns.py"` and edit the new `dyndns.py`.
+*Do not share your token with anyone!!!*
+<>
 ```bash
 git clone https://github.com/HeyJoFlyer/python-cloudflare-ddns.git
 cd python-cloudflare-ddns
